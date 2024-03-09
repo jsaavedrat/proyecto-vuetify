@@ -11,6 +11,9 @@ import DateFnsAdapter from '@date-io/date-fns'
 import es from 'date-fns/locale/es'
 import svSE from 'date-fns/locale/sv'
 import '@mdi/font/css/materialdesignicons.css'
+import { createPinia } from 'pinia'
+
+const pinia = createPinia()
 
 const app = createApp(App)
 const vuetify = createVuetify({
@@ -22,6 +25,8 @@ const vuetify = createVuetify({
         },
     },
 })
+
+app.use(pinia)
 app.use(router)
 app.use(vuetify)
 app.mount('#app')

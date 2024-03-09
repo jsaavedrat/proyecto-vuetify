@@ -62,6 +62,11 @@ const rutas = ref([
     value: 'lista',
     route: '/lista'
   },
+  {
+    title: 'Semana4',
+    value: 'semana4',
+    route: '/semana4'
+  },
 ])
 
 </script>
